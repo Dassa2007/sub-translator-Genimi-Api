@@ -1,0 +1,14 @@
+{
+  "name": "gemini-subtitle-translator",
+  "version": "1.0.0",
+  "description": "Translate English subtitles to Sinhala using Gemini API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@google/genai": "^0.1.1",
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}
