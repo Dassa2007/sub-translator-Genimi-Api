@@ -18,7 +18,8 @@ export default async function handler(req, res) {
     }
 
     const apiKey = process.env.GEMINI_API_KEY;
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    // මෙතන gemini-2.5-flash (හෝ gemini-1.5-flash වෙනුවට නිවැරදි එක) පාවිච්චි කරමු
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
     const prompt = `You are an expert subtitle translator. Translate the following English subtitle text into natural, conversational Sinhala. Keep the SRT formatting, numbers, and timestamps intact if present, and only translate the dialogue text accurately:\n\n${text}`;
 
